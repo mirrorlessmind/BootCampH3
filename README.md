@@ -8,8 +8,26 @@ This project has been deployed to GitHub Pages. To get this project up and runni
 ## Getting Started
 
 Required Links and images of working application.
-* [GitHub Repository](https://github.com/mirrorlessmind/)
-* [Deployed GitHub] 
-* [Demo Video] 
-
+* [GitHub Repository](https://github.com/mirrorlessmind/BootCampH3)
+* [Deployed GitHub] (https://mirrorlessmind.github.io/BootCampH3/) 
 ![Password-Generator Demo](assets/watchmegif.gif)
+
+## This project has the following features: 
+* A random generate password button based on parameters of 8-128 characters, user definied character set, must define at least 1 paramter.
+ 
+
+![](assets/Images/buttons.PNG)
+
+* A Textarea
+    * This textarea will display the users password once it is generated
+
+![](assets/Images/textarea.PNG)
+
+* A Copy button 
+    * This will copy the users password to the user's devices clipboard
+
+![](assets/Images/itworked.PNG)
+
+###This project contains arrays, conditional statements, math. equations, boolean values and event listeners.
+
+####Media Queries added for different devices.
