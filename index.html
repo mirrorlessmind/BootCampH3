@@ -11,6 +11,7 @@
 </head>
 <!--Body Content-->
 <body>
+    <!--Wrapper needed to contain all content-->
     <div id="wrapper">
         <header>
             <h1>Password Generator</h1>
@@ -18,21 +19,21 @@
         <div id="content">
             <h2>Let's Generate A Password</h2>
             <hr>
-            <textarea readonly id="password" placeholder="Your Secure Password"
-                aria-labelledby="Generated Password"></textarea>
+            <textarea readonly id="password" placeholder aria-labelledby="Secure Password">
+                <div> contenteditable="false"></div>
+            </textarea>
             <hr>
-            <!-- This is the div for the buttons -->
+            <!-- Div for the generate and copy buttons -->
             <div id="btn">
-                <button id="generate">Generate
-                    Password</button>
+                <button id="generate">Generate Password</button>
                 <button id="copy">Copy to Clipboard</button>
 
             </div>
         </div>
     </div>
-
-    <!-- This is the Javascript reference-->
-    <script src="script.js"></script>
-
+    <!-- This is the javascript doc reference-->
+    <script src="script.js"></script
     </body>
 </html>
+
+        
