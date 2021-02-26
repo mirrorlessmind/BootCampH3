@@ -2,7 +2,7 @@
 
 //Parameters for password
 // Array of special characters to be included in password
-var specialCharacters = ["$","#","?", "*", "<", "@", "~", "'", "%", """, "+", ",", "-", "\", ".", "/", ":", ";", "&", "=", ">", "^", "_", "`", "|", "{", "}", "!" ];
+var specialCharacters = ["$","#","?", "*", "<", "@", "~", "'", "%", "+", ",", "-", "\", ".", "/", ":", ";", "&", "=", ">", "^", "`", "|", "{", "}", "!" ];
 // Array of lowercase characters to be included in password
 var lowerCasedCharacters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 // Array of uppercase characters to be included in password
@@ -17,7 +17,7 @@ var confirmCharacter;
 var confirmUppercased;
 var confirmLowercased;
 
-// Choices declared outside the if statement so they can be concatenated
+// Choices variable added for concantonation
 var choices;
 
 var get = document.querySelector("#generate");
@@ -31,21 +31,20 @@ get.addEventListener("click", function () {
 function generatePassword() {
     // Asks for length from user
     enter = parseInt(prompt("How many characters between 8 and 128 would you like your password?"));
-    // If statement for user validation 
+    // User validation If Statement 1
     if (!enter) {
         alert("My friend enter a value");
     } else if (enter < 8 || enter > 128) {
-            // Validates & Start user input
+    // Validates & Start user input
         enter = parseInt(prompt("Please choose between 8 and 128"));
-            // Continues once input is validated
+     
     } else {
         confirmNumber = confirm("Will it contain numbers?");
         confirmCharacter = confirm("Will it contain special characters?");
         confirmUppercased = confirm("Will it contain uppercase letters?");
         confirmLowercased = confirm("Will it contain lowercase letters?");
     };
-
-        // Else if for 4 negative options and Choices
+    // Else if for 4 negative options and Choices
         if (!confirmCharacter && !confirmNumber && !confirmUppercased && !confirmLowercased) {
             choices = alert("Please choose at least one criteria!");
 
@@ -94,14 +93,14 @@ function generatePassword() {
         else if (confirmNumber) {
             choices = number;
         }
-        else if (confirmLowercase) {
-            choices = lowerCasedCharacters;
+        else if (confirmLowercased) {
+            choices = lowercased;
         }
-        else if (confirmUppercase) {
-            choices = upperCasedCharacters;
+        else if (confirmUppercased) {
+            choices = uppercased;
         };
 
-        // Password variable is an array holder for user choice length received assistance
+        // Password variable is an array holder for user choice 
         var password = [];
 
         // Create random selection variables:
@@ -120,9 +119,10 @@ function UserInput(ps) {
     document.getElementById("password").textContent = ps;
 }
  var copy = document.querySelector("#copy");
- copy.addEventListener("click", function() {
+ copy.addEventListener("click", function () {
          copyPassword();
 });
+
 // This copies the password value confirmed that it works
 function copyPassword() {
     document.getElementById("password").select();
