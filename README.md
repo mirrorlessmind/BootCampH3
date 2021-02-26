@@ -8,8 +8,8 @@ This project has been deployed to GitHub Pages. To get this project up and runni
 ## Getting Started
 
 Required Links and images of working application.
-* [GitHub Repository](https://github.com/mirrorlessmind/BootCampH3)
-* [Deployed GitHub] (https://mirrorlessmind.github.io/BootCampH3/) 
+* [GitHub Repository](https://github.com/mirrorlessmind/GitPassword)
+* [Deployed GitHub] (https://mirrorlessmind.github.io/GitPassword/) 
 ![Password-Generator Demo](assets/watchmegif.gif)
 
 ## This project has the following features: 
